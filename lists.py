@@ -22,6 +22,8 @@ for x in range(5, 1, -1):
     print("Sorry " + popped + ", we don't have space at the table for you.")
 print()
 
+print("We are still inviting "+ str(len(guests)) + " guests!")
+
 for x in range(1, -1, -1):
     print(guests[x] + " you guys can still attend the dinner party.")
     del guests[x]
