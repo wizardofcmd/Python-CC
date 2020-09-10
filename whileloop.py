@@ -11,6 +11,22 @@ while sandwich_orders:
     print(made + " sandwich has been made.")
 print()
 
+responses = {}
+active = True
+
+while active:
+    name = input('What is your name? ')
+    response = input('What country would you like to visit the most? ')
+    responses[name] = response
+
+    repeat = input('Would you like another person to take part in the poll? Please write \'yes\' or \'no\'. ')
+    if repeat.lower() == 'no':
+        break
+
+for person in responses:
+    country = responses[person]
+    print(person + ' would like to visit ' + country + '.')
+
 '''
 active = True
 while active:
