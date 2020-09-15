@@ -1,0 +1,4 @@
+In Python you can loop through items.
+In Python you can store data in variables.
+In Python you can read and write to files.
+In Python you can perform complex tasks.
