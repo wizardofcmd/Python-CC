@@ -27,7 +27,13 @@ def greet_user():
     """Greet the user by name."""
     username = get_stored_username()
     if username:
-        print('Welcome back, ' + username + '!')
+        valid = input('Is ' + username + ' your username?\n')
+        if valid.lower() == 'yes':
+            print('Welcome back, ' + username + '!')
+        else:
+            print('Sorry about that.\n')
+            username = get_new_username()
+            print('This time we will remember you ' + username + '!')
     else:
         username = get_new_username()
         print('We\'ll remember you, ' + username + '.')
