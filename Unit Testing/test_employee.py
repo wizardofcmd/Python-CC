@@ -17,5 +17,5 @@ class TestEmployee(unittest.TestCase):
         """Test that the raise function takes a number as a parameter"""
         self.e.give_raise(100000)
         self.assertEqual(self.e.salary, 350000)
-        
+
 unittest.main()
